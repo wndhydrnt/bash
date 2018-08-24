@@ -19,5 +19,3 @@ done
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
-
-export PATH="$PATH:~/bin"
