@@ -1,1 +1,1 @@
-POWERLINE_RIGHT_PROMPT="k8s_context in_vim clock battery user_info"
+POWERLINE_RIGHT_PROMPT="k8s_context k8s_namespace clock battery user_info"
