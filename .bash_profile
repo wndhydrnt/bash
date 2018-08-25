@@ -13,7 +13,9 @@ unset MAILCHECK
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
 
-for script in ${HOME}/bash/*.bash; do
+export WANDHYDRANT_BASH_SCRIPTS="${HOME}/bash"
+
+for script in ${WANDHYDRANT_BASH_SCRIPTS}/*.bash; do
   source $script
 done
 
