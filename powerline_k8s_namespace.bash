@@ -5,7 +5,7 @@ function __powerline_k8s_namespace_prompt {
   then
     local k8s_context=$(kubectl config current-context)
     k8s_namespace=$(kubectl config view -o json | jq -r ".contexts[] | select(.name == \"${k8s_context}\") | .context.namespace")
-    if [[ -z "${k8s_namespace}" ]]; then
+    if [[ -z "${k8s_namespace}" || "${k8s_namespace}" == "null" ]]; then
       k8s_namespace="default"
     fi
   fi
