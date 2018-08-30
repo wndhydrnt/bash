@@ -15,6 +15,8 @@ unset MAILCHECK
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
 
+source $(brew --prefix)/etc/bash_completion
+
 for script in ${WANDHYDRANT_BASH_SCRIPTS}/*.bash; do
   source $script
 done
