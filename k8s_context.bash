@@ -1,4 +1,4 @@
-function __powerline_k8s_context_prompt {
+function k8s_context_prompt {
   local k8s_context=""
 
   if command -v kubectl &>/dev/null
@@ -6,5 +6,5 @@ function __powerline_k8s_context_prompt {
     k8s_context=$(kubectl config current-context)
   fi
 
-  [[ -n "${k8s_context}" ]] && echo "${k8s_context}|141"
+  [[ -n "${k8s_context}" ]] && echo "${k8s_context}"
 }
