@@ -5,4 +5,5 @@ then
   export PATH="$GOROOT/bin:$PATH"
   export GOPATH=$HOME/dev/workspace/go
   export PATH="$PATH:$GOPATH/bin"
+  export GOPROXY=direct
 fi
