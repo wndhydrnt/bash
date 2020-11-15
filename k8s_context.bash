@@ -3,7 +3,7 @@ function k8s_context_prompt {
 
   if command -v kubectl &>/dev/null
   then
-    k8s_context=$(kubectl config current-context)
+    k8s_context=$(kubectl config current-context 2>/dev/null)
   fi
 
   [[ -n "${k8s_context}" ]] && echo "${k8s_context}"
