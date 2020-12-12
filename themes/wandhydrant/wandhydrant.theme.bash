@@ -22,7 +22,7 @@ __bobby_clock() {
 }
 
 function prompt_command() {
-    PS1="\n$(__bobby_clock)${yellow}$(k8s_context_prompt) ${green}\w\n${bold_cyan}$(scm_prompt_char_info) ${green}→${reset_color} "
+    PS1="\n$(__bobby_clock)${yellow}$(k8s_context_prompt)${red}$(k8s_config_prompt) ${green}\w\n${bold_cyan}$(scm_prompt_char_info) ${green}→${reset_color} "
 }
 
 THEME_SHOW_CLOCK_CHAR=${THEME_SHOW_CLOCK_CHAR:-"true"}
