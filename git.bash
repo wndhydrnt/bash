@@ -1,2 +1,3 @@
 # Required for signing commits
-export GPG_TTY=$(tty)
+GPG_TTY=$(tty)
+export GPG_TTY
