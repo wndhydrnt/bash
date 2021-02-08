@@ -1,7 +1,9 @@
 if command -v asdf &>/dev/null
 then
-  export GO_VERSION=$(asdf current golang | tr -s ' ' | cut -d ' ' -f 2)
-  export GOROOT=$(asdf where golang ${GO_VERSION})/go
+  GO_VERSION=$(asdf current golang | tr -s ' ' | cut -d ' ' -f 2)
+  export GO_VERSION
+  GOROOT=$(asdf where golang ${GO_VERSION})/go
+  export GOROOT
   export PATH="$GOROOT/bin:$PATH"
   export GOPATH=$HOME/dev/workspace/go
   export PATH="$PATH:$GOPATH/bin"
