@@ -9,3 +9,5 @@ then
   export PATH="$PATH:$GOPATH/bin"
   export GOPROXY=direct
 fi
+
+alias gotnc='go test -coverprofile=coverage.out ./... && go tool cover -html=coverage.out'
